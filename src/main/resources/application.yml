@@ -1,0 +1,22 @@
+spring:
+  application:
+   name: "JTrace"
+  main:
+    banner-mode: "off"
+
+server:
+  servlet:
+    context-path: "/jtrace"
+
+  data:
+    mongodb:
+      uri: "mongodb+srv://kallol008:kallol008scram@newclusterr.cqpyfa4.mongodb.net/?retryWrites=true&w=majority&appName=NewClusterr"
+      database:  "JTraceDatabase"
+  cache:
+    type: "redis"
+  redis:
+    host: "localhost"
+    port: "6379"
+
+  kafka:
+    bootstrap-servers: "localhost:9092"
